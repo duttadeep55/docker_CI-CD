@@ -30,7 +30,7 @@ var setResponseTime = function(req,res,next){
 app.use(setResponseTime);
 
 var client = require('riemann').createClient({
-  host: '10.0.0.14',
+  host: 'riemann-heapster',
   port: 5555
 });
 
