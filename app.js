@@ -27,6 +27,6 @@ app.get('/hostname', function(req, res) {
 
 //app.use(router);
 
-app.listen(3009);
+app.listen(3000);
 
 module.exports.getApp = app;
