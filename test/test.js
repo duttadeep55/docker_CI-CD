@@ -6,7 +6,7 @@ var request = require("supertest"),
 
 describe('GET /', function(){
   it('expects HTTP response 200', function(done){
-    request(app)
+    request(router)
      .get('/')
 	 .expect(200, done); 
   });
