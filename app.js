@@ -21,6 +21,10 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/v1', function(req, res) {
+    res.send("You are in version");
+});
+
 app.get('/hostname', function(req, res) {
     res.send("HOSTNAME:"+hostname);
 });
