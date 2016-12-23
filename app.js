@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/v1', function(req, res) {
-    res.send("You are in version");
+    res.send("You are in version v1");
 });
 
 app.get('/hostname', function(req, res) {
