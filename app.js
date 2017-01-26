@@ -7,30 +7,18 @@ var express = require('express'),
 
 var os = require("os");
 var hostname = os.hostname();
-//var router = express.Router();
-
-require('./monitoring.js')(app);
 
 app.set('views', 'views');
 app.set('view engine', 'jade');
-
-
 
 app.get('/', function(req, res) {
     res.render('home', {
   });
 });
 
-app.get('/v1', function(req, res) {
-    res.send("You are in version v1");
-});
-
 app.get('/hostname', function(req, res) {
     res.send("HOSTNAME:"+hostname);
 });
 
-//app.use(router);
-
 app.listen(3000);
-
 module.exports.getApp = app;
