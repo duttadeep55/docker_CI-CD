@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/hostname', function(req, res) {
-    res.send("HOSTNAME:"+hostname);
+    res.send("Hostname:"+hostname);
 });
 
 app.listen(3000);
