@@ -20,5 +20,9 @@ app.get('/hostname', function(req, res) {
     res.send("Hostname:"+hostname);
 });
 
+app.get('/hostip', function(req, res) {
+    res.send("Hostname:"+hostname -i);
+});
+
 app.listen(3000);
 module.exports.getApp = app;
